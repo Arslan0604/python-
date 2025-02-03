@@ -1,3 +1,1 @@
-name = 'Arslan'
-
-print(name.upper())
+print(print)
