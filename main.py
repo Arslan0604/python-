@@ -1,1 +1,1 @@
-print(print)
+print(dir(__builtins__))
