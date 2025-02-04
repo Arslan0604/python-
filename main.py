@@ -1,6 +1,3 @@
-def my_name(name):
-    print(name)
-    my_name('Arslan')
+my_list = [1,2,   3]
 
-my_name('Arslan')
-
+print(my_list)
