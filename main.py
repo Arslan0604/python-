@@ -1,17 +1,10 @@
-users = [
-    {
-        'user_id': 134,
-        'user_name': 'Arslan'
-    },
-    {
-        'user_id': 831,
-        'user_name': 'Alibaster'
-    }
-]
+my_fruit = 'apple'
+other_fruit = 'banana'
+new_fruit = 'orange'
 
-print(len(users))
-print(users[1]['user_name'])
+all_fruits = [my_fruit, other_fruit, new_fruit]
 
+print(all_fruits)
 
 
 
