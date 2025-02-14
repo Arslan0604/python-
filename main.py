@@ -1,11 +1,24 @@
+my_cars = ['BMW', 'Mercedes', 'Audi', 'Toyota', 'Honda']
 
-rating = [1.45, 54, 32.23, 54.45]
+copied_cars = my_cars 
+copied_cars.append('Ford')
 
-print(min(rating))
-print(max(rating))
-print(sum(rating))
+print(copied_cars)
 
-print(sum(rating) / len(rating))
+print(my_cars)
+
+print(id(my_cars) == id(copied_cars))
+
+copied_cars = my_cars[:]
+
+copied_cars.append('Chevrolet')
+
+print(copied_cars)
+print(my_cars)
+
+print(id(my_cars) == id(copied_cars))
+
+
 
 
 
