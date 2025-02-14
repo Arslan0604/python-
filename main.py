@@ -1,10 +1,11 @@
-my_fruit = 'apple'
-other_fruit = 'banana'
-new_fruit = 'orange'
 
-all_fruits = [my_fruit, other_fruit, new_fruit]
+rating = [1.45, 54, 32.23, 54.45]
 
-print(all_fruits)
+print(min(rating))
+print(max(rating))
+print(sum(rating))
+
+print(sum(rating) / len(rating))
 
 
 
