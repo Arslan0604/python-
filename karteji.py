@@ -1,14 +1,11 @@
-post_ids = (123, 332)
+my_touple = tuple({'key_1': 'value_1', 'key_2': 'value_2', 'key_3': 'value_3', 'key_4': 'value_4', 'key_5': 'value_5', 'key_6': 'value_6'})
 
-post_ids_list = list(post_ids)
+print(my_touple)
 
-post_ids_list.append(444)
 
-print(post_ids_list)
 
-post_ids_tuple = tuple(post_ids_list)
 
-print(post_ids_tuple)
+
 
 
 
