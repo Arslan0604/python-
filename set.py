@@ -38,8 +38,8 @@
 # print(res)
 
 # practika
-my_set = {'abc', 'd', 'f', 'y'}
-other_set = { 'a','f', 'd'}
+# a = {'abc', 'd', 'f', 'y'}
+# b = { 'abc', 'd', 'f', 'l'}
 
 # print(my_set.intersection('abcd'))
 #print(my_set.union(other_set))
@@ -48,11 +48,45 @@ other_set = { 'a','f', 'd'}
 # print(my_set | other_set) 
 # my_set.remove('abc')
 # print(my_set)
-copied_set = my_set.copy()
-my_set.add('t')
-copied_set.add('l')
 
-print(my_set)
+# print((a | b) - (a & b))
+# or 
+# print(a.symmetric_difference(b))
+
+
+
+# print(my_set & copied_set)
+# print(my_set)
+# print(copied_set)
+
+# Tasks that is I done without any help 
+
+# inter_set = {23, 54,}
+# inter_set1 = {24}
+# inter_set_1 = inter_set.union(inter_set1)
+# inter_set_2 = {'abc', 23, 100, 'r', 24}
+# print(list(inter_set_1 & inter_set_2))
+
+# Now it will be Bagdan
+
+set_1 = {10, 5, 7, 100}
+set_1.add(200)
+set_2 = {20, 7, 300, 100, 200}
+intersected_set = set_1.intersection(set_2)
+print(intersected_set)
+
+my_list = list(intersected_set)
+print(my_list)
+
+print(set_1)
+print(set_2)
+
+
+
+
+
+
+
 
 
 
