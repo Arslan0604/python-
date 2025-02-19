@@ -37,11 +37,22 @@
 # res = nums.issubset(other_nums)
 # print(res)
 
+# practika
 my_set = {'abc', 'd', 'f', 'y'}
-other_set = {'a', 'f', 'd'}
+other_set = { 'a','f', 'd'}
 
-print(my_set.intersection(other_set))
+# print(my_set.intersection('abcd'))
+#print(my_set.union(other_set))
+# print(my_set.issubset(other_set))
+# print(my_set.difference(other_set))
+# print(my_set | other_set) 
+# my_set.remove('abc')
+# print(my_set)
+copied_set = my_set.copy()
+my_set.add('t')
+copied_set.add('l')
 
+print(my_set)
 
 
 
