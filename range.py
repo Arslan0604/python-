@@ -41,8 +41,16 @@
 # print(my_range.step)
 
 
-my_range = range(10,30,3)
-# print(my_range.count(3))
-print(my_range.index(10))
+# my_range = range(10,30,3)
+# # print(my_range.count(3))
+# print(my_range.index(10))
 
-
+# Conclusion of list, tuple, dict, set, range
+# sravnenie tipov 
+# list = izmenaymyy, i vajen poryadok, est index, odinakovye elementy
+# tuple(kartej) = ne izmeniymye, vajen poryadok, est index, odinakovye elementy
+# set(nabor) = izmenyaemyy, poryadok ne vajen, nelzya dobavlyat odinakovye elementy
+# range = izmenyat nelzya, poryadok vajen, nemojet byt odinakovyh elementov
+# dict = mojno izmenayt, poryadok ne vajen, 
+# str(string) = ne izmenyaemye, vajen poryadok, est index, mogut byt odinakovye simvoly
+# eto vse tipy posledovatelnosti
