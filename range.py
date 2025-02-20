@@ -19,8 +19,30 @@
 # print(my_range[3])
 # print(my_range[4])
 
-my_range = range(5)
-print(my_range)
-print(type(my_range))
-print(my_range[-1])
+# my_range = range(5)
+# print(my_range)
+# print(type(my_range))
+# print(my_range[-1])
+
+# range mojno sozdavat i bez peremennoy
+# for n in range(5):
+#     print(n)
+
+# for n in range(12,25,5):
+#     print(n)
+    
+# print(list(range(12,25,5)))
+# print(tuple(range(12,25,5)))
+# print(set(range(12,25,5)))
+
+# my_range = range(10,30,3)
+# print(my_range.start) # eto attributy .start, .stop .step
+# print(my_range.stop)
+# print(my_range.step)
+
+
+my_range = range(10,30,3)
+# print(my_range.count(3))
+print(my_range.index(10))
+
 
