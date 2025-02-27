@@ -13,5 +13,5 @@ intial_post = {
     'author' : 'Arslan',
 }
 
-post_with_weekday = create_new_post(intial_post)
+post_with_weekday = create_new_post(intial_post, 'Monday')
 print(post_with_weekday)
