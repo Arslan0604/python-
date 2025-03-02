@@ -22,8 +22,13 @@
 # print(bool('')) # str 
 # print(bool(None))
 
-print(not not['a', 'abc', 10])
-print(bool({}))
-print(bool(set('abc')))
-print(bool('abc'))
+# print(not not['a', 'abc', 10])
+# print(bool({}))
+# print(bool(set('abc')))
+# print(bool('abc'))
+
+my_list = [1,2]
+if my_list: 
+    print("Arslan you will acheave everthing easaly")
+
 
