@@ -27,8 +27,11 @@
 # print(bool(set('abc')))
 # print(bool('abc'))
 
-my_list = [1,2]
-if my_list: 
-    print("Arslan you will acheave everthing easaly")
+# my_list = [1,2]
+# if my_list: 
+#     print("Arslan you will acheave everthing easaly")
 
+my_dict = {'name' : 'Arslan', 'valuem': 'Jango'}
+my_dict1 = {'name' : 'Arslan', 'valuem': 'Jango'}
 
+print(my_dict or  my_dict1)
