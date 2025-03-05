@@ -34,25 +34,33 @@
 
 # print(button)
 
-arslan_1 = {
-    'name': 'arsicola',
-    'color': 'blue',
-    'kg': 100,
+# arslan_1 = {
+#     'name': 'arsicola',
+#     'color': 'blue',
+#     'kg': 100,
     
-}
-arslan_2 = {
-    'monstr': 'mustang',
-    'color': 'black',
-    'kg': 50,
+# }
+# arslan_2 = {
+#     'monstr': 'mustang',
+#     'color': 'black',
+#     'kg': 50,
     
-}
-arslan_3 = {
-    'jango': 'arsicola',
-    'color': 'blue',
-    'kg': 85,
+# }
+# arslan_3 = {
+#     'jango': 'arsicola',
+#     'color': 'blue',
+#     'kg': 85,
     
-}
+# }
 
-arslan_best = arslan_1 | arslan_2 | arslan_3
+# arslan_best = arslan_1 | arslan_2 | arslan_3
 
-print(arslan_best)
+# print(arslan_best)
+
+# udalenie my del
+
+# my_list = [1,3]
+
+# del my_list[1]
+
+# print(my_list)
