@@ -9,28 +9,27 @@
 # my_car.move()
 # my_car.stop()
 
-class Comment:
-    def __init__(self, text, initial_votes_qty=0):
-        self.text = text
-        self.votes_qty = initial_votes_qty
+# class Comment:
+#     def __init__(self, text, initial_votes_qty=0):
+#         self.text = text
+#         self.votes_qty = initial_votes_qty
         
-    def upvote(self, qty):
-        self.votes_qty += qty
+#     def upvote(self, qty):
+#         self.votes_qty += qty
         
-    def reset_votes_qty(self):
-        self.votes_qty = 0
+#     def reset_votes_qty(self):
+#         self.votes_qty = 0
         
-first_comment = Comment("my comment")
+# first_comment = Comment("my comment")
+# print(first_comment.votes_qty)
 
-print(first_comment.votes_qty)
+# first_comment.upvote(10)
+# first_comment.upvote(20)
+# print(first_comment.votes_qty)
 
-first_comment.upvote(10)
-first_comment.upvote(20)
-print(first_comment.votes_qty)
+# first_comment.reset_votes_qty()
 
-first_comment.reset_votes_qty()
-
-print(first_comment.votes_qty)
+# print(first_comment.votes_qty)
 
 
 
@@ -61,4 +60,34 @@ print(first_comment.votes_qty)
 
 # print(first_img)
 
+# staticheskiy method 
+# class Comment:
+#     def __init__(self, text):
+#         self.text = text
+        
+#     @staticmethod
+#     def merge_comments(first, second): 
+#         return f"{first} {second}"
+    
+# my_comment = Comment("My comment")
+# m_1 = Comment.merge_comments("Thanks!", "Excellent.")
+# print(m_1)
 
+# m_2 = my_comment.merge_comments("Great", "OK")
+# print(m_2)
+
+# atributy class primer
+# class Comment:
+#     total_comments = 0
+    
+#     def __init__(self, text):
+#         self.text = text
+#         self.votes_qty = 0 
+#         Comment.total_comments += 1
+        
+# first_comment = Comment("First comment")
+# print(Comment.total_comments)
+
+# Comment.total_comments = 10 
+# print(Comment.total_comments)
+# print(first_comment.total_comments)
