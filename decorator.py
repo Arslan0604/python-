@@ -5,10 +5,12 @@ def decorator_function(original_fn):
         
         result = original_fn(*args, **kwargs)
         
+        print("Function result:", result)
+        
         # some actions after execution of the original_fn
         print("Executed after function")
         
-        # return result
+        return result
 
     return wrappper_function
 
