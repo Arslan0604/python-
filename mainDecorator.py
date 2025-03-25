@@ -23,27 +23,54 @@
 
 # now another primer eto otdelno ot verhnego 
 
-def validate_args(fn):
+# def validate_args(fn):
+#     def wrapper(*args, **kwargs):
+#         for arg in [*args, *kwargs.values()]:
+            
+#                 if not isinstance(arg, int) and not isinstance(arg, float):
+#                     raise ValueError(f"Type of the {arg} is {type(arg)}",
+#                                      "All arguments must be int or float")
+            
+#         return fn(*args, **kwargs)
+    
+#     return wrapper
+# @validate_args
+# def sum_nums(a, b):
+#     return a + b
+
+# try: 
+#     print(sum_nums(7, 2))
+#     print(sum_nums(10.5, 2.3))
+#     print(sum_nums([1,2,3], "2.0"))
+#     print(sum_nums(a=10.5, b="2.0"))
+    
+# except ValueError as e: 
+#     print(e)     
+
+# drugoy primer 
+def is_user_authenticated():
+    return True
+
+def check_user_auth(fn):
     def wrapper(*args, **kwargs):
-        for arg in [*args, *kwargs.values()]:
-            
-                if not isinstance(arg, int) and not isinstance(arg, float):
-                    raise ValueError(f"Type of the {arg} is {type(arg)}",
-                                     "All arguments must be int or float")
-            
-        result = fn(*args, **kwargs)
-        return result
+        if is_user_authenticated():
+            print("User is authenticated!")
+            return fn(*args, **kwargs)
+        else:
+            raise Exception("user is NOT authenticated")
     
     return wrapper
-@validate_args
-def sum_nums(a, b):
-    return a + b
 
-try: 
-    print(sum_nums(7, 2))
-    print(sum_nums(10.5, 2.3))
-    print(sum_nums(a=10.5, b="2.0"))
-except ValueError as e: 
-    print(e)       
+@check_user_auth
+def do_sensitive_job():
+    # do some tasks when user is authenticated 
+    print("Results of some sensitive task")
+    
+try:
+    do_sensitive_job()
+except Exception as e: 
+    print(e)
+
+    
 
     
