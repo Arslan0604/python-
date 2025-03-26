@@ -1,5 +1,11 @@
-import other
+from other_module import my_fn
+
+print('import.py', __name__)
+print('import.py', __name__ == '__main__')
 
 
-other.print_sum(1, 2)
+
+
+
+
 
