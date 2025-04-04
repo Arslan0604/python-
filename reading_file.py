@@ -1,6 +1,13 @@
 from pathlib import Path 
 
-Path('test.txt').unlink()  # удаляет файл
+file  = open('test.txt', 'w')
+file.close()
+
+my_file = Path('test.txt')
+if my_file.exists():# проверяет существует ли файл
+    my_file.unlink() # удаляет файл
+
+    
 
     
 
