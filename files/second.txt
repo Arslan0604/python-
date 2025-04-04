@@ -1,3 +1,0 @@
-first line in second file
-second line in second file
-last line in the second file
