@@ -59,9 +59,10 @@ from pathlib import Path
 
 
 
-cwd = Path('.')
+my_dir = Path('/Users')/'macbookpro'/'Desktop'/'Python'/'django'
 
-print(isinstance(cwd, Path))
-print(type(cwd))
+if not my_dir.exists():
+    my_dir.mkdir()
 
-print(Path.__subclasses__())
+if my_dir.exists():
+    my_dir.rmdir()
