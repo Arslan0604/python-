@@ -15,7 +15,7 @@ from pathlib import Path
 #         print(file)
 #         my_zip_file.write(file)
 
-with ZipFile('my_files.zip') as my_zip_file: # raspokovka faila
-    my_zip_file.extractall('my_files_second')
+# with ZipFile('my_files.zip') as my_zip_file: # raspokovka faila
+#     my_zip_file.extractall('my_files_second')
 
     
