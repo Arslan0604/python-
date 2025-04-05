@@ -10,7 +10,12 @@ from pathlib import Path
 # with open('my_files/second.txt', 'w') as my_file: # sozdanie ftorogo faila v papke
 #     my_file.write('This is the second file')
 
-with ZipFile('my_files.zip', mode='w') as my_zip_file:
-    print('my_zip_file')
+# with ZipFile('my_files.zip', mode='w') as my_zip_file:
+#     for file in Path('my_files').iterdir():
+#         print(file)
+#         my_zip_file.write(file)
+
+with ZipFile('my_files.zip') as my_zip_file: # raspokovka faila
+    my_zip_file.extractall('my_files_second')
 
     
