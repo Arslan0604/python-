@@ -33,4 +33,4 @@ with open('test.csv') as csvfile:
         
     for line in reader:
         print(line)
-    print(reader.line_num)
+    print(reader.line_num) #  on potom peresapisyvaetsya
