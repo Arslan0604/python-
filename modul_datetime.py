@@ -42,8 +42,8 @@ import time
 
 start_time = time.time()
 
-my_list = list(range(1000000000))
-print(my_list[1000])
+my_range = range(10000000000000)
+print(my_range[1000])
 
 end_time = time.time()
 
