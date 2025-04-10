@@ -27,7 +27,7 @@ with open('test.csv', 'w') as csvfile:
    writer.writerow([343, 'Jambul', 5])
    
 with open('test.csv') as csvfile:
-    reader = csv.reader(csvfile)
+    reader = csv.reader(csvfile, delimiter=';')
     for line in reader:
         print(line)
         
