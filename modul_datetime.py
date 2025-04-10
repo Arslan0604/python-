@@ -10,8 +10,8 @@
 # print(my_time.minute)
 # print(my_time.second)
 
-from datetime import datetime, timedelta
-my_datetime = datetime(2102, 12, 13, 12, 59, 12, 2133)
+# from datetime import datetime, timedelta
+# my_datetime = datetime(2102, 12, 13, 12, 59, 12, 2133)
 # print(my_datetime)
 # print(my_datetime.year)
 # print(my_datetime.hour)
@@ -27,4 +27,24 @@ my_datetime = datetime(2102, 12, 13, 12, 59, 12, 2133)
 
 # print(converted_date)
 
-print(my_datetime + timedelta(days=100, minutes=120, hours=2)) # ty mojesh i minusovat toje 
+# print(my_datetime + timedelta(days=100, minutes=120, hours=2)) # ty mojesh i minusovat toje
+
+import time 
+
+# start_time = time.time()
+# print(time.ctime(123412341234))
+
+# time.sleep(2.5)
+
+# end_time = time.time()
+
+# print(end_time - start_time)
+
+start_time = time.time()
+
+my_list = list(range(1000000000))
+print(my_list[1000])
+
+end_time = time.time()
+
+print("Total duration of the operation: ", end_time - start_time )
