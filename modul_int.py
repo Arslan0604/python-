@@ -13,3 +13,11 @@ my_list = [1,10,4, 43, 44]
 
 print(random.shuffle(my_list))
 print(my_list)
+
+random.shuffle(my_list)
+print(my_list)
+
+print(''.join(random.choices('ABCASDF12341234', k=8)))
+
+
+
