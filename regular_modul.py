@@ -39,6 +39,12 @@
 
 # Task to solving
 
+import re 
+
+def check_password(password):
+    length_regexp = r"\S{8}" 
+
+
 
 
 
