@@ -39,10 +39,20 @@
 
 # Task to solving
 
-import re 
+import re # vstrinyy modul
 
 def check_password(password):
-    length_regexp = r"\S{8}" 
+    length_pattern = re.compile(r"\S{8,}") 
+    lowercase_pattern = re.compile(r"[a-z]+")
+    uppercase_pattern = re.compile(r"[A-Z]+")
+    number_pattern = re.compile(r"[0-9]+")
+    spacial_symbol_pattern = re.compile(r"[@#?!*^]+")
+    
+    
+    
+    
+    
+    
 
 
 
