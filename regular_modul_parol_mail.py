@@ -41,14 +41,19 @@
 
 import re # vstrinyy modul
 
-test_password = 'ABASasd!3432423'
+# vse chto kak nado delat parol 
 
 def check_password(password):
-    length_pattern = re.compile(r"\S{8,}") 
-    lowercase_pattern = re.compile(r"[a-z]+")
-    uppercase_pattern = re.compile(r"[A-Z]+")
-    number_pattern = re.compile(r"[0-9]+")
-    spacial_symbol_pattern = re.compile(r"[@#?!*^]+")
+    length_pattern = re.compile(r"\S{8,}") # opredelyaet dliny 
+    lowercase_pattern = re.compile(r"^.*[a-z]+.*$") # kak minimum malenkaya bukva 
+    uppercase_pattern = re.compile(r"^.*[A-Z]+.*$") # kak minimum bolsya bukva
+    number_pattern = re.compile(r"^.*[0-9]+.*$") # kak minimum cyfra
+    spacial_symbol_pattern = re.compile(r"^.*[@#?!*^]+.*$") # spec znaki 
+    no_whitespace_pattern = re.compile(r"^\S*$")   # proveryate probely
+    
+    if not re.fullmatch(no_whitespace_pattern, password):
+        return (False, "No whitespaces allowed in the password")
+        
     
     if not re.fullmatch(length_pattern, password):
         return (False, "Password must have at least 8 symbols")
@@ -66,7 +71,25 @@ def check_password(password):
         return (False, "Password must have at least one symbol @#?!*^")
     
     
-print(check_password(test_password))
+    return(True, "Password is valid!")
+
+# print(check_password('1234ASD0980     as!@'))
+# print(check_password('123'))
+# print(check_password('12345678'))
+# print(check_password('1234567a'))
+# print(check_password('asdfASDFA'))
+# print(check_password('1234sdLKJLJ'))
+# print(check_password('1234ASDFasdf!@'))
+
+while True:
+    password = input("Please enter your password: ")
+    password_check_result = check_password(password)
+    if password_check_result[0]:
+        print(password_check_result[1])
+        break
+    
+    print(password_check_result[1])
+
     
 
 
