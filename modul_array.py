@@ -1,10 +1,16 @@
 from array import array
 
 
-my_int_array = array('i',[3,4,6,7])
+my_int_array = array('i',[5, 5, 3,4,6,7])
 
-print(my_int_array)
-print(type(my_int_array))   
+with open('my_array.bin', 'wb') as my_file:
+    my_int_array.tofile(my_file)
 
-my_int_array.append(14)
-print(my_int_array)
+imported_array = array('i')
+
+with open('my_array.bin', 'rb') as my_file:
+    imported_array.fromfile(my_file, 4)
+    print(imported_array)
+
+imported_array.reverse()
+print(imported_array)
